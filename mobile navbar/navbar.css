@@ -1,0 +1,58 @@
+/*Mobile navbar
+list-style-type:property
+descendanat selectors*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li {
+  list-style-type: none; /*This means, me gustaria seleccionar mi unordered list, y en ella todos los listed items. Y a ellos darle un estilo de lista none*/
+}
+/*Tambien si quisiera podria solo seleccionar la ul*/
+ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  background: black;
+  color: orange;
+  padding: 10px 10px;
+  display: block;
+  margin: 10px 10px;
+  width: 50vw;
+}
+
+/*Recordemos que los elementos de linea no respetan el top bottom margin, por eso tengo que transformar todos mis links, que son
+elementos de linea en elementos de bloque. Para despues poder modificarlos. REcordar que al poner ul li a, le estoy aplicando la 
+propiedad a todos los links  que se encuentren en los li, los cuales estan dentro de la ul */
+
+/*Display inline-block*/
+
+.inline {
+  color: blue;
+  background: grey;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+.inline:hover {
+  color: green;
+}
+
+/*Al inicio, antes de agregar el inline block, mis links no me reconocen ni el padding top ni el bottom, para solucionar esto
+tengo que convertir esos elementos de linea(links) en inlineblocks. Asi reconoceran el padding top bottom que les estoty dando*/
+
+.div {
+  width: 800px;
+  margin: 0 auto;
+  background: yellow;
+  text-align: center;
+}
+/*Asi es como logro que un navbar quede centrado, primero hago que los links se comporten como inlineblock y les doy un padding para que
+ se separen de sus bordes y aumente el tama;o del boton. Despues los encierro en un div, y para el div siguien siendo elementos inline,
+ por eso si le doy un text align me centra los botones en base al ancho del div, tomando como que son elementos de linea. Y el div que es
+ todo el bloque, lo centro con el margen en base a los extremos izquierdo y derecho de la pantalla*/

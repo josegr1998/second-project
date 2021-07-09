@@ -1,0 +1,59 @@
+/*font-style, font-family* control + space para aver emmet suggestions*/
+div {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+/*Se eligen varias font family por si el buscador que usa el usuario no tiene la primera que ponemos*/
+/*Google fonts:*/
+
+.googlefont {
+  font-family: "Niconne", cursive;
+  font-weight: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+
+.googleimport {
+  font-family: "Cantarell", sans-serif;
+}
+
+/* recordar que tambien se pueden importar fuentes descargadas desde la compu
+https://www.mclibre.org/consultar/amaya/css/css-fuentes-web.html link para ver como se hacia eso */
+
+/*font weight:
+font style: */
+
+.properties {
+  font-weight: normal;
+  font-style: italic;
+} /*Dependiendo de que fuente externa se use puede o no funcionar, por ejemplo las de google tienen algo ya determinado que no se puede cambiar*/
+
+/*text align and text indent*
+El text align sirve para elegir un texto ya sea parrafo, heading, o incluso todo el texto incluido en el body, y moverlo hacia la derecha, izquierda
+o centro. ej text align: center;/
+/*text indent produce una identacion en el inicio de un parrafo por ej, si a eso se lo aplica, se puede usar para headings y demas recordar
+que la identacion siempre se produce en la primer linea si elegimos un parrafo*/
+
+/*some other properties:
+line-height: separacion entre lineas de parrafo o dentro de un bloque como un div
+letter-spacing: Separacion entre cada letra
+word-spacing: Separacion entre palabras
+text-transform: capitalize:La primer letra es mayuscula  lowercase:Todas las letras son minnusculas  upercase:Todas las letras son mayusculas
+text-decoration: Sirve para definir el subrayado, lo puede quitar o inlcuso lo puede hacer doble(arriba y abajo) */
+
+.two {
+  line-height: 30px;
+  letter-spacing: 10px;
+}
+.one {
+  word-spacing: 20px;
+}
+
+.headingone {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*CSS box model*/

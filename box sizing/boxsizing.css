@@ -1,0 +1,65 @@
+.box1,
+.box2,
+.box3 {
+  width: 200px;
+  height: 200px;
+}
+
+.box1 {
+  color: white;
+  background: red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.box2 {
+  color: black;
+  background: yellow;
+}
+.box3 {
+  color: red;
+  background: black;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+/*abrir google dev para observar bien como funciona el padding*/
+/*Al agregarle padding al box1 y box3 podemos observar que el width aumenta a 240px, aunque hayamos declarado arriba que todas las cajas
+deverian tener 200px*/
+/*Con boxsizing borderbox lo que logro es que se respete el width y height que le di a cada box (o sea cada div) en el principio*/
+/*Puedo agregar el boxsizing border box en el asterisco del principio *{} Para que todas las cajas respeten el ancho y alto que 
+se les asigna siempre a lo largo de todos los documentos*/
+
+/*NEW SUBJET*/
+/*Display none
+opacity:0
+visibility:hidden*/
+
+div {
+  background: blue;
+  color: white;
+  margin: 10px;
+}
+
+.none {
+  display: none;
+}
+
+.opacity1 {
+  opacity: 1; /*max value 1, tambien es el que tiene por default*/
+}
+
+.opacity5 {
+  opacity: 0.5;
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+.visibility {
+  visibility: hidden; /*The default visibility is visible*/
+}
+
+/*All this properties are working with the divs and whats inside of them, becasue they are signed with the class*/
+/*Si miramos el google developer tools podemos ver que display none, elimina el elemento directamente del flujo. Mientras que 
+los demas opacity 0 y visibility hidden solo lo ocultan*/
+/*Opacity entonces, seria tambien utilizado para cambiar la transparencia de los elementos*/

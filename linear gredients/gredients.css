@@ -1,0 +1,42 @@
+div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+.one {
+  background: linear-gradient(blue, green);
+}
+
+.two {
+  background: linear-gradient(
+    to top,
+    blue,
+    green
+  ); /*Separados por coma, se pueden agregar tantos colores como se desee*/
+}
+
+.three {
+  background: linear-gradient(
+    150deg,
+    blue,
+    green
+  ); /*Los degrees como que cambian laa forma en que termina y empieza el color*/
+}
+.four {
+  background: linear-gradient(
+    to top left,
+    red,
+    green
+  ); /*Empieza desde abajo en la derecha y va hasta arriba e izquierda*/
+}
+
+/*Ejemplo de como se pueden usar para cambiar el nivel de opacidad*/
+
+.five {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+
+.six {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}

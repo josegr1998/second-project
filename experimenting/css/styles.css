@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Parte del header*/
+.header {
+  height: 20vh;
+  background: linear-gradient(rgba(209, 84, 11, 0.9), rgba(209, 84, 11, 0.5));
+  text-align: center;
+  border-bottom: black 4px solid;
+  /*position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;*/
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 30px;
+  /*background-color: green;*/
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 15px;
+  color: red;
+}
+
+a:hover {
+  color: brown;
+}
+/*links del footer que no se por que no me tomaban el hover*/
+.bue:hover {
+  color: brown;
+}
+
+/*Parte del banner*/
+.banner {
+  background-color: yellow;
+  height: 70vh;
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 64px;
+  color: red;
+  text-align: left;
+}
+.bannertext {
+  padding-top: 150px;
+}
+
+/*Parte del contenido*/
+
+.imagen_inicio {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.nothing_like_us {
+  color: red;
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+p {
+  font-size: 24px;
+  line-height: 30px;
+  padding: 30px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*PArte del footer*/
+
+.footer {
+  height: 20vh;
+  background: linear-gradient(rgba(209, 84, 11, 0.9), rgba(209, 84, 11, 0.5));
+  text-align: center;
+  border-bottom: black 4px solid;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 30px;
+  /*background-color: green;*/
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 15px;
+  color: red;
+}

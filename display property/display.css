@@ -1,0 +1,44 @@
+/*Default display property:
+Block: Always starts a new line and takes full width
+Inline: Does not start and only take up as much as content space*/
+
+.block {
+  color: white;
+  background: red; /*como default tanto el div, como el h1 y el p tienen un display de bloque*/
+  display: inline;
+}
+
+.inline {
+  color: white;
+  background: green; /*Como default tanto el span como el img y el <a> tienen un display inline*/
+  display: block;
+}
+
+/*with display property its posible to changue de default display of the elements*/
+
+/*HORIZONTAL CENTER*/
+
+/*body {text-align:center} Sirve, pero en los elementos de bloque centrara solo el texto. Para los elementos de linea incluso aunque sean imagenes
+funcionara bien*/
+
+.block1 {
+  background: blue;
+  color: white;
+  width: 400px;
+  margin: 0 auto;
+}
+.inline1 {
+  background: red;
+  color: white;
+}
+
+.part2 {
+  text-align: center;
+}
+/*Recordemos que block es la clase que contiene todos los elementos de bloque. Puedo asignarles un ancho y despues usar el margen 
+ que tienen con la pantalla para centrarlos. ej margin{0 auto;} lo que va a hacer es darle un margen 0 en el eje y a todos los
+ elementos de bloque que contiene la clase, y despues el auto va a poner todos los elementos de bloque en el centro de la pantalla*/
+
+/*IMPORTANATE:
+ Block: Top bottom margin respected (Se respeta el margen que asignamos en esa propiedad para los elementos de bloque)
+ Inline: Top bottom margin not respected (No se respeta el valor que le asignamos a esa propiedad en los elementos de linea)*/

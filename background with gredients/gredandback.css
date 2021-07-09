@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: orange;
+}
+
+.banner {
+  background: url("/background url and stuff/banner2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*Para que el titulo que estamos poniendo en el banner se vea mejor, podemos combinar la imagen que queremos poner con un gradiant*/
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/background url and stuff/banner2.jpg");
+}
+/*Esto hace que el texto se vea mucho mas claro*/
+
+/*HORA 8 MINUTO 7*/
+/*CSS grediant gerenator.com para poder generar gradiantes*/ /*CHECK THIS OUT IS AMAZING*/

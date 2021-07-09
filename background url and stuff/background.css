@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /*Las ultimas 4 propiedades se veran mas alelante*/
+}
+
+.big-img {
+  background: url("./building.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 64px;
+  background-attachment: fixed;
+}
+
+.small-img {
+  background: url("./nature.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.folder-img {
+  background: url("banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*Hay que tener en cuenta que la imagen que se elija desde un principio es importane*/
+
+/*Background repeat: Sirve para controlar la cantidad de veces que se repite una imagen*/
+/*El valor repeat x sirve para repetir una imagen en el eje x*/
+/*El valor repeat y sirve para repetir una imagen en el eje y*/
+/*El valor space, hace que la imagen se repita pero con espacios entre medio*/
+/*Background-size, como lo dice su nombre sirve para definir el tama;o de la imagen*/
+/*el valor cover, hace que la imagen ocupe todo el div*/
+/*Tener en cuenta que estoy usando divs para insertar imagenes dentro de ellos, por lo tanto puedo darles el tama;o que quiera*/
+
+/*BACKGROUND POSITION: Como lo dice su nombre sirve para cambiar la posicion del background image*/
+/*Tenemos los tipicos que son escritos como top, bottom, left and right y tambien estan los que incluyen valores de unidades ej
+background-position:10px 50px esto quiere decir que va a avanzar 10px en el eje x y a bajar 50px en el eje y, comienza desde la punta superior
+izquierda*/
+
+/*BACKGROUND ATTACHMENT:
+el valor fixed hace que la imagen se quede fija mientras el texto se siguie moviendo*/
